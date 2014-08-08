@@ -775,7 +775,7 @@ var TypeScript;
 
                     var parent_filename = parameter.parent_filename;
 
-                    var fileToLoad = parameter.filenme;
+                    var fileToLoad = parameter.filename;
 
                     if(node.path.extname(fileToLoad) !== '.ts'){
                         fileToLoad += '.ts'
