@@ -775,6 +775,10 @@ var TypeScript;
 
                     var parent_filename = parameter.parent_filename;
 
+                    if(path.extname(parameter.filename) !== '.ts'){
+                        parameter.filename += '.ts';
+                    }
+
                     this.io.readFile(parameter.filename, function (iofile) {
                         var unit = new TypeScript.Api.SourceUnit(iofile.path, iofile.content, [], iofile.remote);
 
