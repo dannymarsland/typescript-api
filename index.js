@@ -775,8 +775,8 @@ var TypeScript;
 
                     var parent_filename = parameter.parent_filename;
 
-                    if(path.extname(parameter.filename) !== '.ts'){
-                        parameter.filename += '.ts';
+                    if(node.path.extname(parameter.filename) !== '.ts'){
+                        parameter.filename += '.ts'
                     }
 
                     this.io.readFile(parameter.filename, function (iofile) {
